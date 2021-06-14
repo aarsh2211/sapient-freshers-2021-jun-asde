@@ -23,8 +23,8 @@ pipeline {
 
                 git 'https://github.com/adithnaveen/sapient-freshers-2021-jun-asde.git'
 
-                // Run Maven on a Unix agent.
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+              
+                bat "mvn -Dmaven.test.failure.ignore=true clean package"
 
             }
 
