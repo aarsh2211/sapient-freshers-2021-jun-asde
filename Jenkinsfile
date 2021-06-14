@@ -22,7 +22,7 @@ pipeline {
                 echo "************** Running ${env.BUILD_ID} on ${env.JENKINS_URL}***********"
 
 
-                git 'https://github.com/aarsh2211/sapient-freshers-2021-jun-asde.git'
+                git branch: 'jenkins-works', url:'https://github.com/aarsh2211/sapient-freshers-2021-jun-asde.git'
 
               
                 echo "mvn -Dmaven.test.failure.ignore=true clean package"
