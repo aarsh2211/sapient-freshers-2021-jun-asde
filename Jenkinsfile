@@ -24,7 +24,7 @@ pipeline {
                 git 'https://github.com/aarsh2211/sapient-freshers-2021-jun-asde.git'
 
               
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                echo "mvn -Dmaven.test.failure.ignore=true clean package"
 
             }
 
